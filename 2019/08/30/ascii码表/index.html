@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zakyu.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="Bin Oct Dec Hex 缩写&#x2F;字符 解释    0000 0000 00 0 0x00 NUL(null) 空字符   0000 0001 1 1 0x01 SOH(start of headline) 标题开始   0000 0010 2 2 0x02 STX (start of text) 正文开始   0000 0011 3 3 0x03 ETX (end of text) 正">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ASCII码表">
+<meta property="og:url" content="https://zakyu.github.io/2019/08/30/ascii%E7%A0%81%E8%A1%A8/">
+<meta property="og:site_name" content="Shepherd">
+<meta property="og:description" content="Bin Oct Dec Hex 缩写&#x2F;字符 解释    0000 0000 00 0 0x00 NUL(null) 空字符   0000 0001 1 1 0x01 SOH(start of headline) 标题开始   0000 0010 2 2 0x02 STX (start of text) 正文开始   0000 0011 3 3 0x03 ETX (end of text) 正">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-08-29T16:50:00.000Z">
+<meta property="article:modified_time" content="2019-12-21T20:46:55.603Z">
+<meta property="article:author" content="Zak Yu">
+<meta property="article:tag" content="ASCII">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://zakyu.github.io/2019/08/30/ascii%E7%A0%81%E8%A1%A8/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>ASCII码表 | Shepherd</title>
+  
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Shepherd</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">算是个知识点备忘录吧！</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-知识点">
+
+    <a href="/knowledge-node" rel="section"><i class="fa fa-sitemap fa-fw"></i>知识点</a>
+
+  </li>
+        <li class="menu-item menu-item-c#">
+
+    <a href="/csharp" rel="section"><i class="fa fa-chevron-right fa-fw"></i>C#</a>
+
+  </li>
+        <li class="menu-item menu-item-lua">
+
+    <a href="/lua" rel="section"><i class="fa fa-chevron-right fa-fw"></i>Lua</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Zak Yu</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">41</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">37</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ZakYu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ZakYu" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:zekaiyu.97@gmail.com" title="E-Mail → mailto:zekaiyu.97@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zakyu.github.io/2019/08/30/ascii%E7%A0%81%E8%A1%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zak Yu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Shepherd">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ASCII码表
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-08-30 00:50:00" itemprop="dateCreated datePublished" datetime="2019-08-30T00:50:00+08:00">2019-08-30</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2019-12-22 04:46:55" itemprop="dateModified" datetime="2019-12-22T04:46:55+08:00">2019-12-22</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">辅助工具</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <table>
+<thead>
+<tr>
+<th align="center">Bin</th>
+<th align="center">Oct</th>
+<th align="center">Dec</th>
+<th align="center">Hex</th>
+<th align="center">缩写/字符</th>
+<th align="center">解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">0000 0000</td>
+<td align="center">00</td>
+<td align="center">0</td>
+<td align="center">0x00</td>
+<td align="center">NUL(null)</td>
+<td align="center">空字符</td>
+</tr>
+<tr>
+<td align="center">0000 0001</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0x01</td>
+<td align="center">SOH(start of headline)</td>
+<td align="center">标题开始</td>
+</tr>
+<tr>
+<td align="center">0000 0010</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">0x02</td>
+<td align="center">STX (start of text)</td>
+<td align="center">正文开始</td>
+</tr>
+<tr>
+<td align="center">0000 0011</td>
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">0x03</td>
+<td align="center">ETX (end of text)</td>
+<td align="center">正文结束</td>
+</tr>
+<tr>
+<td align="center">0000 0100</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">0x04</td>
+<td align="center">EOT (end of transmission)</td>
+<td align="center">传输结束</td>
+</tr>
+<tr>
+<td align="center">0000 0101</td>
+<td align="center">5</td>
+<td align="center">5</td>
+<td align="center">0x05</td>
+<td align="center">ENQ (enquiry)</td>
+<td align="center">请求</td>
+</tr>
+<tr>
+<td align="center">0000 0110</td>
+<td align="center">6</td>
+<td align="center">6</td>
+<td align="center">0x06</td>
+<td align="center">ACK (acknowledge)</td>
+<td align="center">收到通知</td>
+</tr>
+<tr>
+<td align="center">0000 0111</td>
+<td align="center">7</td>
+<td align="center">7</td>
+<td align="center">0x07</td>
+<td align="center">BEL (bell)</td>
+<td align="center">响铃</td>
+</tr>
+<tr>
+<td align="center">0000 1000</td>
+<td align="center">10</td>
+<td align="center">8</td>
+<td align="center">0x08</td>
+<td align="center">BS (backspace)</td>
+<td align="center">退格</td>
+</tr>
+<tr>
+<td align="center">0000 1001</td>
+<td align="center">11</td>
+<td align="center">9</td>
+<td align="center">0x09</td>
+<td align="center">HT (horizontal tab)</td>
+<td align="center">水平制表符</td>
+</tr>
+<tr>
+<td align="center">0000 1010</td>
+<td align="center">12</td>
+<td align="center">10</td>
+<td align="center">0x0A</td>
+<td align="center">LF (NL line feed, new line)</td>
+<td align="center">换行键</td>
+</tr>
+<tr>
+<td align="center">0000 1011</td>
+<td align="center">13</td>
+<td align="center">11</td>
+<td align="center">0x0B</td>
+<td align="center">VT (vertical tab)</td>
+<td align="center">垂直制表符</td>
+</tr>
+<tr>
+<td align="center">0000 1100</td>
+<td align="center">14</td>
+<td align="center">12</td>
+<td align="center">0x0C</td>
+<td align="center">FF (NP form feed, new page)</td>
+<td align="center">换页键</td>
+</tr>
+<tr>
+<td align="center">0000 1101</td>
+<td align="center">15</td>
+<td align="center">13</td>
+<td align="center">0x0D</td>
+<td align="center">CR (carriage return)</td>
+<td align="center">回车键</td>
+</tr>
+<tr>
+<td align="center">0000 1110</td>
+<td align="center">16</td>
+<td align="center">14</td>
+<td align="center">0x0E</td>
+<td align="center">SO (shift out)</td>
+<td align="center">不用切换</td>
+</tr>
+<tr>
+<td align="center">0000 1111</td>
+<td align="center">17</td>
+<td align="center">15</td>
+<td align="center">0x0F</td>
+<td align="center">SI (shift in)</td>
+<td align="center">启用切换</td>
+</tr>
+<tr>
+<td align="center">0001 0000</td>
+<td align="center">20</td>
+<td align="center">16</td>
+<td align="center">0x10</td>
+<td align="center">DLE (data link escape)</td>
+<td align="center">数据链路转义</td>
+</tr>
+<tr>
+<td align="center">0001 0001</td>
+<td align="center">21</td>
+<td align="center">17</td>
+<td align="center">0x11</td>
+<td align="center">DC1 (device control 1)</td>
+<td align="center">设备控制1</td>
+</tr>
+<tr>
+<td align="center">0001 0010</td>
+<td align="center">22</td>
+<td align="center">18</td>
+<td align="center">0x12</td>
+<td align="center">DC2 (device control 2)</td>
+<td align="center">设备控制2</td>
+</tr>
+<tr>
+<td align="center">0001 0011</td>
+<td align="center">23</td>
+<td align="center">19</td>
+<td align="center">0x13</td>
+<td align="center">DC3 (device control 3)</td>
+<td align="center">设备控制3</td>
+</tr>
+<tr>
+<td align="center">0001 0100</td>
+<td align="center">24</td>
+<td align="center">20</td>
+<td align="center">0x14</td>
+<td align="center">DC4 (device control 4)</td>
+<td align="center">设备控制4</td>
+</tr>
+<tr>
+<td align="center">0001 0101</td>
+<td align="center">25</td>
+<td align="center">21</td>
+<td align="center">0x15</td>
+<td align="center">NAK (negative acknowledge)</td>
+<td align="center">拒绝接收</td>
+</tr>
+<tr>
+<td align="center">0001 0110</td>
+<td align="center">26</td>
+<td align="center">22</td>
+<td align="center">0x16</td>
+<td align="center">SYN (synchronous idle)</td>
+<td align="center">同步空闲</td>
+</tr>
+<tr>
+<td align="center">0001 0111</td>
+<td align="center">27</td>
+<td align="center">23</td>
+<td align="center">0x17</td>
+<td align="center">ETB (end of trans. block)</td>
+<td align="center">结束传输块</td>
+</tr>
+<tr>
+<td align="center">0001 1000</td>
+<td align="center">30</td>
+<td align="center">24</td>
+<td align="center">0x18</td>
+<td align="center">CAN (cancel)</td>
+<td align="center">取消</td>
+</tr>
+<tr>
+<td align="center">0001 1001</td>
+<td align="center">31</td>
+<td align="center">25</td>
+<td align="center">0x19</td>
+<td align="center">EM (end of medium)</td>
+<td align="center">媒介结束</td>
+</tr>
+<tr>
+<td align="center">0001 1010</td>
+<td align="center">32</td>
+<td align="center">26</td>
+<td align="center">0x1A</td>
+<td align="center">SUB (substitute)</td>
+<td align="center">代替</td>
+</tr>
+<tr>
+<td align="center">0001 1011</td>
+<td align="center">33</td>
+<td align="center">27</td>
+<td align="center">0x1B</td>
+<td align="center">ESC (escape)</td>
+<td align="center">换码(溢出)</td>
+</tr>
+<tr>
+<td align="center">0001 1100</td>
+<td align="center">34</td>
+<td align="center">28</td>
+<td align="center">0x1C</td>
+<td align="center">FS (file separator)</td>
+<td align="center">文件分隔符</td>
+</tr>
+<tr>
+<td align="center">0001 1101</td>
+<td align="center">35</td>
+<td align="center">29</td>
+<td align="center">0x1D</td>
+<td align="center">GS (group separator)</td>
+<td align="center">分组符</td>
+</tr>
+<tr>
+<td align="center">0001 1110</td>
+<td align="center">36</td>
+<td align="center">30</td>
+<td align="center">0x1E</td>
+<td align="center">RS (record separator)</td>
+<td align="center">记录分隔符</td>
+</tr>
+<tr>
+<td align="center">0001 1111</td>
+<td align="center">37</td>
+<td align="center">31</td>
+<td align="center">0x1F</td>
+<td align="center">US (unit separator)</td>
+<td align="center">单元分隔符</td>
+</tr>
+<tr>
+<td align="center">0010 0000</td>
+<td align="center">40</td>
+<td align="center">32</td>
+<td align="center">0x20</td>
+<td align="center">(space)</td>
+<td align="center">空格</td>
+</tr>
+<tr>
+<td align="center">0010 0001</td>
+<td align="center">41</td>
+<td align="center">33</td>
+<td align="center">0x21</td>
+<td align="center">!</td>
+<td align="center">叹号</td>
+</tr>
+<tr>
+<td align="center">0010 0010</td>
+<td align="center">42</td>
+<td align="center">34</td>
+<td align="center">0x22</td>
+<td align="center">“</td>
+<td align="center">双引号</td>
+</tr>
+<tr>
+<td align="center">0010 0011</td>
+<td align="center">43</td>
+<td align="center">35</td>
+<td align="center">0x23</td>
+<td align="center">#</td>
+<td align="center">井号</td>
+</tr>
+<tr>
+<td align="center">0010 0100</td>
+<td align="center">44</td>
+<td align="center">36</td>
+<td align="center">0x24</td>
+<td align="center">$</td>
+<td align="center">美元符</td>
+</tr>
+<tr>
+<td align="center">0010 0101</td>
+<td align="center">45</td>
+<td align="center">37</td>
+<td align="center">0x25</td>
+<td align="center">%</td>
+<td align="center">百分号</td>
+</tr>
+<tr>
+<td align="center">0010 0110</td>
+<td align="center">46</td>
+<td align="center">38</td>
+<td align="center">0x26</td>
+<td align="center">&amp;</td>
+<td align="center">和号</td>
+</tr>
+<tr>
+<td align="center">0010 0111</td>
+<td align="center">47</td>
+<td align="center">39</td>
+<td align="center">0x27</td>
+<td align="center">‘</td>
+<td align="center">闭单引号</td>
+</tr>
+<tr>
+<td align="center">0010 1000</td>
+<td align="center">50</td>
+<td align="center">40</td>
+<td align="center">0x28</td>
+<td align="center">(</td>
+<td align="center">开括号</td>
+</tr>
+<tr>
+<td align="center">0010 1001</td>
+<td align="center">51</td>
+<td align="center">41</td>
+<td align="center">0x29</td>
+<td align="center">)</td>
+<td align="center">闭括号</td>
+</tr>
+<tr>
+<td align="center">0010 1010</td>
+<td align="center">52</td>
+<td align="center">42</td>
+<td align="center">0x2A</td>
+<td align="center">*</td>
+<td align="center">星号</td>
+</tr>
+<tr>
+<td align="center">0010 1011</td>
+<td align="center">53</td>
+<td align="center">43</td>
+<td align="center">0x2B</td>
+<td align="center">+</td>
+<td align="center">加号</td>
+</tr>
+<tr>
+<td align="center">0010 1100</td>
+<td align="center">54</td>
+<td align="center">44</td>
+<td align="center">0x2C</td>
+<td align="center">,</td>
+<td align="center">逗号</td>
+</tr>
+<tr>
+<td align="center">0010 1101</td>
+<td align="center">55</td>
+<td align="center">45</td>
+<td align="center">0x2D</td>
+<td align="center">-</td>
+<td align="center">减号/破折号</td>
+</tr>
+<tr>
+<td align="center">0010 1110</td>
+<td align="center">56</td>
+<td align="center">46</td>
+<td align="center">0x2E</td>
+<td align="center">.</td>
+<td align="center">句号</td>
+</tr>
+<tr>
+<td align="center">0010 1111</td>
+<td align="center">57</td>
+<td align="center">47</td>
+<td align="center">0x2F</td>
+<td align="center">/</td>
+<td align="center">斜杠</td>
+</tr>
+<tr>
+<td align="center">0011 0000</td>
+<td align="center">60</td>
+<td align="center">48</td>
+<td align="center">0x30</td>
+<td align="center">0</td>
+<td align="center">字符0</td>
+</tr>
+<tr>
+<td align="center">0011 0001</td>
+<td align="center">61</td>
+<td align="center">49</td>
+<td align="center">0x31</td>
+<td align="center">1</td>
+<td align="center">字符1</td>
+</tr>
+<tr>
+<td align="center">0011 0010</td>
+<td align="center">62</td>
+<td align="center">50</td>
+<td align="center">0x32</td>
+<td align="center">2</td>
+<td align="center">字符2</td>
+</tr>
+<tr>
+<td align="center">0011 0011</td>
+<td align="center">63</td>
+<td align="center">51</td>
+<td align="center">0x33</td>
+<td align="center">3</td>
+<td align="center">字符3</td>
+</tr>
+<tr>
+<td align="center">0011 0100</td>
+<td align="center">64</td>
+<td align="center">52</td>
+<td align="center">0x34</td>
+<td align="center">4</td>
+<td align="center">字符4</td>
+</tr>
+<tr>
+<td align="center">0011 0101</td>
+<td align="center">65</td>
+<td align="center">53</td>
+<td align="center">0x35</td>
+<td align="center">5</td>
+<td align="center">字符5</td>
+</tr>
+<tr>
+<td align="center">0011 0110</td>
+<td align="center">66</td>
+<td align="center">54</td>
+<td align="center">0x36</td>
+<td align="center">6</td>
+<td align="center">字符6</td>
+</tr>
+<tr>
+<td align="center">0011 0111</td>
+<td align="center">67</td>
+<td align="center">55</td>
+<td align="center">0x37</td>
+<td align="center">7</td>
+<td align="center">字符7</td>
+</tr>
+<tr>
+<td align="center">0011 1000</td>
+<td align="center">70</td>
+<td align="center">56</td>
+<td align="center">0x38</td>
+<td align="center">8</td>
+<td align="center">字符8</td>
+</tr>
+<tr>
+<td align="center">0011 1001</td>
+<td align="center">71</td>
+<td align="center">57</td>
+<td align="center">0x39</td>
+<td align="center">9</td>
+<td align="center">字符9</td>
+</tr>
+<tr>
+<td align="center">0011 1010</td>
+<td align="center">72</td>
+<td align="center">58</td>
+<td align="center">0x3A</td>
+<td align="center">:</td>
+<td align="center">冒号</td>
+</tr>
+<tr>
+<td align="center">0011 1011</td>
+<td align="center">73</td>
+<td align="center">59</td>
+<td align="center">0x3B</td>
+<td align="center">;</td>
+<td align="center">分号</td>
+</tr>
+<tr>
+<td align="center">0011 1100</td>
+<td align="center">74</td>
+<td align="center">60</td>
+<td align="center">0x3C</td>
+<td align="center">&lt;</td>
+<td align="center">小于</td>
+</tr>
+<tr>
+<td align="center">0011 1101</td>
+<td align="center">75</td>
+<td align="center">61</td>
+<td align="center">0x3D</td>
+<td align="center">=</td>
+<td align="center">等号</td>
+</tr>
+<tr>
+<td align="center">0011 1110</td>
+<td align="center">76</td>
+<td align="center">62</td>
+<td align="center">0x3E</td>
+<td align="center">&gt;</td>
+<td align="center">大于</td>
+</tr>
+<tr>
+<td align="center">0011 1111</td>
+<td align="center">77</td>
+<td align="center">63</td>
+<td align="center">0x3F</td>
+<td align="center">?</td>
+<td align="center">问号</td>
+</tr>
+<tr>
+<td align="center">0100 0000</td>
+<td align="center">100</td>
+<td align="center">64</td>
+<td align="center">0x40</td>
+<td align="center">@</td>
+<td align="center">电子邮件符号</td>
+</tr>
+<tr>
+<td align="center">0100 0001</td>
+<td align="center">101</td>
+<td align="center">65</td>
+<td align="center">0x41</td>
+<td align="center">A</td>
+<td align="center">大写字母A</td>
+</tr>
+<tr>
+<td align="center">0100 0010</td>
+<td align="center">102</td>
+<td align="center">66</td>
+<td align="center">0x42</td>
+<td align="center">B</td>
+<td align="center">大写字母B</td>
+</tr>
+<tr>
+<td align="center">0100 0011</td>
+<td align="center">103</td>
+<td align="center">67</td>
+<td align="center">0x43</td>
+<td align="center">C</td>
+<td align="center">大写字母C</td>
+</tr>
+<tr>
+<td align="center">0100 0100</td>
+<td align="center">104</td>
+<td align="center">68</td>
+<td align="center">0x44</td>
+<td align="center">D</td>
+<td align="center">大写字母D</td>
+</tr>
+<tr>
+<td align="center">0100 0101</td>
+<td align="center">105</td>
+<td align="center">69</td>
+<td align="center">0x45</td>
+<td align="center">E</td>
+<td align="center">大写字母E</td>
+</tr>
+<tr>
+<td align="center">0100 0110</td>
+<td align="center">106</td>
+<td align="center">70</td>
+<td align="center">0x46</td>
+<td align="center">F</td>
+<td align="center">大写字母F</td>
+</tr>
+<tr>
+<td align="center">0100 0111</td>
+<td align="center">107</td>
+<td align="center">71</td>
+<td align="center">0x47</td>
+<td align="center">G</td>
+<td align="center">大写字母G</td>
+</tr>
+<tr>
+<td align="center">0100 1000</td>
+<td align="center">110</td>
+<td align="center">72</td>
+<td align="center">0x48</td>
+<td align="center">H</td>
+<td align="center">大写字母H</td>
+</tr>
+<tr>
+<td align="center">0100 1001</td>
+<td align="center">111</td>
+<td align="center">73</td>
+<td align="center">0x49</td>
+<td align="center">I</td>
+<td align="center">大写字母I</td>
+</tr>
+<tr>
+<td align="center">0100 1010</td>
+<td align="center">112</td>
+<td align="center">74</td>
+<td align="center">0x4A</td>
+<td align="center">J</td>
+<td align="center">大写字母J</td>
+</tr>
+<tr>
+<td align="center">0100 1011</td>
+<td align="center">113</td>
+<td align="center">75</td>
+<td align="center">0x4B</td>
+<td align="center">K</td>
+<td align="center">大写字母K</td>
+</tr>
+<tr>
+<td align="center">0100 1100</td>
+<td align="center">114</td>
+<td align="center">76</td>
+<td align="center">0x4C</td>
+<td align="center">L</td>
+<td align="center">大写字母L</td>
+</tr>
+<tr>
+<td align="center">0100 1101</td>
+<td align="center">115</td>
+<td align="center">77</td>
+<td align="center">0x4D</td>
+<td align="center">M</td>
+<td align="center">大写字母M</td>
+</tr>
+<tr>
+<td align="center">0100 1110</td>
+<td align="center">116</td>
+<td align="center">78</td>
+<td align="center">0x4E</td>
+<td align="center">N</td>
+<td align="center">大写字母N</td>
+</tr>
+<tr>
+<td align="center">0100 1111</td>
+<td align="center">117</td>
+<td align="center">79</td>
+<td align="center">0x4F</td>
+<td align="center">O</td>
+<td align="center">大写字母O</td>
+</tr>
+<tr>
+<td align="center">0101 0000</td>
+<td align="center">120</td>
+<td align="center">80</td>
+<td align="center">0x50</td>
+<td align="center">P</td>
+<td align="center">大写字母P</td>
+</tr>
+<tr>
+<td align="center">0101 0001</td>
+<td align="center">121</td>
+<td align="center">81</td>
+<td align="center">0x51</td>
+<td align="center">Q</td>
+<td align="center">大写字母Q</td>
+</tr>
+<tr>
+<td align="center">0101 0010</td>
+<td align="center">122</td>
+<td align="center">82</td>
+<td align="center">0x52</td>
+<td align="center">R</td>
+<td align="center">大写字母R</td>
+</tr>
+<tr>
+<td align="center">0101 0011</td>
+<td align="center">123</td>
+<td align="center">83</td>
+<td align="center">0x53</td>
+<td align="center">S</td>
+<td align="center">大写字母S</td>
+</tr>
+<tr>
+<td align="center">0101 0100</td>
+<td align="center">124</td>
+<td align="center">84</td>
+<td align="center">0x54</td>
+<td align="center">T</td>
+<td align="center">大写字母T</td>
+</tr>
+<tr>
+<td align="center">0101 0101</td>
+<td align="center">125</td>
+<td align="center">85</td>
+<td align="center">0x55</td>
+<td align="center">U</td>
+<td align="center">大写字母U</td>
+</tr>
+<tr>
+<td align="center">0101 0110</td>
+<td align="center">126</td>
+<td align="center">86</td>
+<td align="center">0x56</td>
+<td align="center">V</td>
+<td align="center">大写字母V</td>
+</tr>
+<tr>
+<td align="center">0101 0111</td>
+<td align="center">127</td>
+<td align="center">87</td>
+<td align="center">0x57</td>
+<td align="center">W</td>
+<td align="center">大写字母W</td>
+</tr>
+<tr>
+<td align="center">0101 1000</td>
+<td align="center">130</td>
+<td align="center">88</td>
+<td align="center">0x58</td>
+<td align="center">X</td>
+<td align="center">大写字母X</td>
+</tr>
+<tr>
+<td align="center">0101 1001</td>
+<td align="center">131</td>
+<td align="center">89</td>
+<td align="center">0x59</td>
+<td align="center">Y</td>
+<td align="center">大写字母Y</td>
+</tr>
+<tr>
+<td align="center">0101 1010</td>
+<td align="center">132</td>
+<td align="center">90</td>
+<td align="center">0x5A</td>
+<td align="center">Z</td>
+<td align="center">大写字母Z</td>
+</tr>
+<tr>
+<td align="center">0101 1011</td>
+<td align="center">133</td>
+<td align="center">91</td>
+<td align="center">0x5B</td>
+<td align="center">[</td>
+<td align="center">开方括号</td>
+</tr>
+<tr>
+<td align="center">0101 1100</td>
+<td align="center">134</td>
+<td align="center">92</td>
+<td align="center">0x5C</td>
+<td align="center">\</td>
+<td align="center">反斜杠</td>
+</tr>
+<tr>
+<td align="center">0101 1101</td>
+<td align="center">135</td>
+<td align="center">93</td>
+<td align="center">0x5D</td>
+<td align="center">]</td>
+<td align="center">闭方括号</td>
+</tr>
+<tr>
+<td align="center">0101 1110</td>
+<td align="center">136</td>
+<td align="center">94</td>
+<td align="center">0x5E</td>
+<td align="center">^</td>
+<td align="center">脱字符</td>
+</tr>
+<tr>
+<td align="center">0101 1111</td>
+<td align="center">137</td>
+<td align="center">95</td>
+<td align="center">0x5F</td>
+<td align="center">_</td>
+<td align="center">下划线</td>
+</tr>
+<tr>
+<td align="center">0110 0000</td>
+<td align="center">140</td>
+<td align="center">96</td>
+<td align="center">0x60</td>
+<td align="center">`</td>
+<td align="center">开单引号</td>
+</tr>
+<tr>
+<td align="center">0110 0001</td>
+<td align="center">141</td>
+<td align="center">97</td>
+<td align="center">0x61</td>
+<td align="center">a</td>
+<td align="center">小写字母a</td>
+</tr>
+<tr>
+<td align="center">0110 0010</td>
+<td align="center">142</td>
+<td align="center">98</td>
+<td align="center">0x62</td>
+<td align="center">b</td>
+<td align="center">小写字母b</td>
+</tr>
+<tr>
+<td align="center">0110 0011</td>
+<td align="center">143</td>
+<td align="center">99</td>
+<td align="center">0x63</td>
+<td align="center">c</td>
+<td align="center">小写字母c</td>
+</tr>
+<tr>
+<td align="center">0110 0100</td>
+<td align="center">144</td>
+<td align="center">100</td>
+<td align="center">0x64</td>
+<td align="center">d</td>
+<td align="center">小写字母d</td>
+</tr>
+<tr>
+<td align="center">0110 0101</td>
+<td align="center">145</td>
+<td align="center">101</td>
+<td align="center">0x65</td>
+<td align="center">e</td>
+<td align="center">小写字母e</td>
+</tr>
+<tr>
+<td align="center">0110 0110</td>
+<td align="center">146</td>
+<td align="center">102</td>
+<td align="center">0x66</td>
+<td align="center">f</td>
+<td align="center">小写字母f</td>
+</tr>
+<tr>
+<td align="center">0110 0111</td>
+<td align="center">147</td>
+<td align="center">103</td>
+<td align="center">0x67</td>
+<td align="center">g</td>
+<td align="center">小写字母g</td>
+</tr>
+<tr>
+<td align="center">0110 1000</td>
+<td align="center">150</td>
+<td align="center">104</td>
+<td align="center">0x68</td>
+<td align="center">h</td>
+<td align="center">小写字母h</td>
+</tr>
+<tr>
+<td align="center">0110 1001</td>
+<td align="center">151</td>
+<td align="center">105</td>
+<td align="center">0x69</td>
+<td align="center">i</td>
+<td align="center">小写字母i</td>
+</tr>
+<tr>
+<td align="center">0110 1010</td>
+<td align="center">152</td>
+<td align="center">106</td>
+<td align="center">0x6A</td>
+<td align="center">j</td>
+<td align="center">小写字母j</td>
+</tr>
+<tr>
+<td align="center">0110 1011</td>
+<td align="center">153</td>
+<td align="center">107</td>
+<td align="center">0x6B</td>
+<td align="center">k</td>
+<td align="center">小写字母k</td>
+</tr>
+<tr>
+<td align="center">0110 1100</td>
+<td align="center">154</td>
+<td align="center">108</td>
+<td align="center">0x6C</td>
+<td align="center">l</td>
+<td align="center">小写字母l</td>
+</tr>
+<tr>
+<td align="center">0110 1101</td>
+<td align="center">155</td>
+<td align="center">109</td>
+<td align="center">0x6D</td>
+<td align="center">m</td>
+<td align="center">小写字母m</td>
+</tr>
+<tr>
+<td align="center">0110 1110</td>
+<td align="center">156</td>
+<td align="center">110</td>
+<td align="center">0x6E</td>
+<td align="center">n</td>
+<td align="center">小写字母n</td>
+</tr>
+<tr>
+<td align="center">0110 1111</td>
+<td align="center">157</td>
+<td align="center">111</td>
+<td align="center">0x6F</td>
+<td align="center">o</td>
+<td align="center">小写字母o</td>
+</tr>
+<tr>
+<td align="center">0111 0000</td>
+<td align="center">160</td>
+<td align="center">112</td>
+<td align="center">0x70</td>
+<td align="center">p</td>
+<td align="center">小写字母p</td>
+</tr>
+<tr>
+<td align="center">0111 0001</td>
+<td align="center">161</td>
+<td align="center">113</td>
+<td align="center">0x71</td>
+<td align="center">q</td>
+<td align="center">小写字母q</td>
+</tr>
+<tr>
+<td align="center">0111 0010</td>
+<td align="center">162</td>
+<td align="center">114</td>
+<td align="center">0x72</td>
+<td align="center">r</td>
+<td align="center">小写字母r</td>
+</tr>
+<tr>
+<td align="center">0111 0011</td>
+<td align="center">163</td>
+<td align="center">115</td>
+<td align="center">0x73</td>
+<td align="center">s</td>
+<td align="center">小写字母s</td>
+</tr>
+<tr>
+<td align="center">0111 0100</td>
+<td align="center">164</td>
+<td align="center">116</td>
+<td align="center">0x74</td>
+<td align="center">t</td>
+<td align="center">小写字母t</td>
+</tr>
+<tr>
+<td align="center">0111 0101</td>
+<td align="center">165</td>
+<td align="center">117</td>
+<td align="center">0x75</td>
+<td align="center">u</td>
+<td align="center">小写字母u</td>
+</tr>
+<tr>
+<td align="center">0111 0110</td>
+<td align="center">166</td>
+<td align="center">118</td>
+<td align="center">0x76</td>
+<td align="center">v</td>
+<td align="center">小写字母v</td>
+</tr>
+<tr>
+<td align="center">0111 0111</td>
+<td align="center">167</td>
+<td align="center">119</td>
+<td align="center">0x77</td>
+<td align="center">w</td>
+<td align="center">小写字母w</td>
+</tr>
+<tr>
+<td align="center">0111 1000</td>
+<td align="center">170</td>
+<td align="center">120</td>
+<td align="center">0x78</td>
+<td align="center">x</td>
+<td align="center">小写字母x</td>
+</tr>
+<tr>
+<td align="center">0111 1001</td>
+<td align="center">171</td>
+<td align="center">121</td>
+<td align="center">0x79</td>
+<td align="center">y</td>
+<td align="center">小写字母y</td>
+</tr>
+<tr>
+<td align="center">0111 1010</td>
+<td align="center">172</td>
+<td align="center">122</td>
+<td align="center">0x7A</td>
+<td align="center">z</td>
+<td align="center">小写字母z</td>
+</tr>
+<tr>
+<td align="center">0111 1011</td>
+<td align="center">173</td>
+<td align="center">123</td>
+<td align="center">0x7B</td>
+<td align="center">{</td>
+<td align="center">开花括号</td>
+</tr>
+<tr>
+<td align="center">0111 1100</td>
+<td align="center">174</td>
+<td align="center">124</td>
+<td align="center">0x7C</td>
+<td align="center">|</td>
+<td align="center">垂线</td>
+</tr>
+<tr>
+<td align="center">0111 1101</td>
+<td align="center">175</td>
+<td align="center">125</td>
+<td align="center">0x7D</td>
+<td align="center">}</td>
+<td align="center">闭花括号</td>
+</tr>
+<tr>
+<td align="center">0111 1110</td>
+<td align="center">176</td>
+<td align="center">126</td>
+<td align="center">0x7E</td>
+<td align="center">~</td>
+<td align="center">波浪号</td>
+</tr>
+<tr>
+<td align="center">0111 1111</td>
+<td align="center">177</td>
+<td align="center">127</td>
+<td align="center">0x7F</td>
+<td align="center">DEL (delete)</td>
+<td align="center">删除</td>
+</tr>
+</tbody></table>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>Zak Yu
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://zakyu.github.io/2019/08/30/ascii%E7%A0%81%E8%A1%A8/" title="ASCII码表">https://zakyu.github.io/2019/08/30/ascii码表/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/ASCII/" rel="tag"># ASCII</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/08/30/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" rel="prev" title="选择排序">
+                  <i class="fa fa-chevron-left"></i> 选择排序
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/09/02/csharp-ado-net-%E8%BF%9E%E6%8E%A5%E5%AD%97%E7%AC%A6%E4%B8%B2/" rel="next" title="C# ADO .NET 连接字符串">
+                  C# ADO .NET 连接字符串 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zak Yu</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+</body>
+</html>
